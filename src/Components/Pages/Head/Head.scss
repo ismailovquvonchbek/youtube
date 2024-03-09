@@ -1,0 +1,164 @@
+.head {
+    max-width: 1295px;
+    width: 100%;
+    z-index: -1;
+}
+
+.head__info {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.head__title {
+    font-family: "Mulish";
+    font-size: 26px;
+    font-weight: 700;
+}
+
+.head__list {
+    display: flex;
+    gap: 40px;
+    list-style-type: none;
+    height: 255px;
+    overflow: scroll;
+
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.head__list::-webkit-scrollbar {
+    display: none;
+}
+
+.head__item {
+    width: 250px;
+}
+
+.head__imgOne {
+    max-width: 250px;
+    width: 100%;
+    height: 150px;
+    border-radius: 10px;
+}
+
+.head__titleOne {
+    font-family: "Mulish";
+    font-size: 16px;
+    font-weight: 700;
+    text-align: left;
+    color: #19202C;
+}
+
+.linkOne {
+    text-decoration: none;
+}
+
+.head__pOne {
+    font-family: "Mulish";
+    font-size: 13px;
+    font-weight: 400;
+    color: #C2C2C2;
+}
+
+.head__listTwo {
+    display: flex;
+    gap: 40px;
+    list-style-type: none;
+    height: 255px;
+    overflow: scroll;
+
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+
+    height: 400px;
+    // height: 400px;
+}
+
+.head__itemTwo   {
+    // max-width: 540px;
+    width: 540px;
+}
+
+.head__imgTwo {
+    max-width: 540px;
+    width: 100%;
+    height: 300px;
+    border-radius: 10px;
+}
+
+
+
+
+.head__listThree {
+    display: flex;
+    gap: 40px;
+    list-style-type: none;
+    height: 255px;
+    overflow: scroll;
+
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+
+    height: 400px;
+}
+
+.head__itemThree   {
+    width: 250px;
+}
+
+.head__imgThree {
+    max-width: 250px;
+    width: 100%;
+    height: 150px;
+    border-radius: 10px;
+}
+
+.head__titleThree {
+    font-family: "Mulish";
+    font-size: 16px;
+    font-weight: 700;
+    text-align: left;
+    color: #19202C;
+}
+
+.head__pThree {
+    font-family: "Mulish";
+    font-size: 13px;
+    font-weight: 400;
+    color: #C2C2C2;
+}
+
+.head__infoThree {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+@media screen and (max-width: 510px) {
+    .head__listTwo, .head__listThree {
+        display: none;
+    }
+
+    .head__titleTwo, .head__infoThree {
+        display: none;
+    }
+
+    .head__list {
+        flex-direction: column;
+        height: 100%;
+    }
+}
+
+@media screen and (max-width: 460px) {
+    .head {
+        margin-left: -150px;
+        text-align: center;
+        width: 400px;
+    }
+
+    .head__imgOne {
+        width: 430px;
+        height: 300px;
+    }
+}

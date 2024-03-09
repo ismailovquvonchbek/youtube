@@ -1,0 +1,121 @@
+.menu {
+    margin-top: 64px;
+    position: fixed;
+    height: 100%;
+    padding: 20px;
+    background-color: #fff;
+    z-index: 1000;
+    font-family: 'Mulish';
+    margin-left: -20px;
+    overflow: scroll;
+
+    overflow-y: scroll;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.menu__link {
+    font-family: "Mulish";
+    font-size: 15px;
+    font-weight: 400;
+    text-align: left;
+    color: #ec370f;
+    padding: 0;
+    margin: 0;
+    margin-top: 10px;
+    margin-left: 15px;
+}
+
+
+
+.menu::-webkit-scrollbar {
+    display: none;
+}
+
+.container__menu {
+    width: 100%;
+}
+
+.menu__list,
+.menu__itemtwo {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.menu__item {
+    margin: 10px 0;
+}
+
+.menu__link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    font-family: "Mulish";
+    color: #333;
+    font-weight: 400;
+
+    img {
+        margin-right: 10px;
+    }
+}
+
+.menu__icon {
+    margin: 0;
+    padding: 0;
+}
+
+
+@media screen and (max-width: 460px) {
+    .menu {
+        display: none;
+    }
+
+    .menu__list {
+        display: none;
+    }
+
+    .menu__itemtwo {
+        display: none;
+    }
+}
+
+.menu__title {
+    font-family: "Mulish";
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.profile__lists {
+    list-style-type: none;
+    margin-left: -20px;
+}
+
+.profile__items {
+    display: flex;
+    align-items: center;
+    margin: 23px 0;
+    gap: 10px;
+}
+
+.profile__users {
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+}
+
+.profile__name {
+    font-family: "Mulish";
+    font-size: 16px;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+    color: #898989;
+    
+}
+
+.profile__links {
+    text-decoration: none;
+}

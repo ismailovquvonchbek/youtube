@@ -1,0 +1,150 @@
+.channel__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style-type: none;
+    margin-top: 30px;
+    margin-left: -30px;
+}
+
+.channel__item {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+}
+
+.channel__profile {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.channel__profImg {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+
+.channel__profTitle {
+    font-family: "Mulish";
+    font-size: 26px;
+    font-weight: 700;
+    margin: 0;
+    padding: 0;
+}
+
+.channel__mail {
+    font-family: "Mulish";
+    font-size: 13px;
+    font-weight: 400;
+    text-decoration: none;
+    color: #C2C2C2;
+}
+
+
+.channel__infoBiggest {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.channel__infoLists {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    gap: 60px;
+    margin-left: -30px;
+}
+
+.channel__navLink {
+    text-decoration: none;
+    font-family: "Mulish";
+    font-size: 18px;
+    font-weight: 400;
+    color: #000000;
+
+    &:hover {
+        color: red;
+        text-decoration: underline;
+        text-underline-offset: 5px;
+        text-decoration-thickness: 2px;
+    }
+}
+
+.channel__infoSmaller {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    margin-top: 50px;
+}
+
+.channel__videoImg {
+    // max-width: 490px;
+    width: 430px;
+    height: 250px;
+    border-radius: 12px;
+}
+
+.channel__infoTitle {
+    font-family: "Mulish";
+    font-size: 26px;
+    font-weight: 700;
+    color: #19202C;
+    margin: 0;
+    padding: 0;
+    width: 430px;
+}
+
+.channel__infoP {
+    font-family: "Mulish";
+    font-size: 16px;
+    font-weight: 400;
+    width: 540px;
+    margin: 0;
+    padding: 0;
+    margin-top: 10px;
+}
+
+.channel__infoSpan {
+    font-family: "Mulish";
+    font-size: 16px;
+    font-weight: 400;
+    width: 540px;
+    margin: 0;
+    padding: 0;
+    margin-top: 30px;
+    color: #C2C2C2;
+    display: block;
+}
+
+.channel__infoHeading {
+    font-family: "Mulish";
+    font-size: 16px;
+    font-weight: 400;
+    color: #C2C2C2;
+}
+
+.chanel__infoUsersAll {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    margin: 25px 0;
+}
+
+.channel__infoTitS {
+    font-family: "Mulish";
+    font-size: 18px;
+    font-weight: 700;
+    margin: 0;
+    padding: 0;
+}
+
+.channel__listTwo {
+    display: flex;
+    overflow: scroll;
+    width: 1250px;
+    list-style-type: none;
+    gap: 40px;
+    margin-left: -40px;
+}
