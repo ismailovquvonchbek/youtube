@@ -7,7 +7,7 @@ import Combined_Shape from "../../Images/Combined_Shape.svg"
 import notification from "../../Images/notification.svg"
 import camera from "../../Images/camera.svg"
 import MenuButton from "./MenuButton";
-
+import { NavLink } from "react-router-dom";
 
 function Api({ onMenuClick }) {
   const [count, setCount] = React.useState(0);
@@ -54,7 +54,9 @@ function Api({ onMenuClick }) {
               <img src={notification} alt="Icons_notification" onClick={() => setCount((num) => num === 3 ? 0 : num + 1)} />
             </div>
 
+            <NavLink to={"/channel/2"}>
             <img src={UserPicture} alt="Icons_User" />
+            </NavLink>
           </div>
         </div>
       </header>
