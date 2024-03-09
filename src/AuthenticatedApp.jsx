@@ -6,6 +6,7 @@ import Menu from "./Components/Pages/Menu/Menu";
 import Head from "./Components/Pages/Head/Head";
 import Coming from "./Components/Pages/Coming/Coming";
 import Channel from "./Components/Pages/Channel/Channel";
+import Error from "./Components/Pages/Error/Error";
 
 function AuthenticatedApp() {
   const [showText, setShowText] = React.useState(true);
@@ -32,6 +33,7 @@ function AuthenticatedApp() {
               <Route path="/video/:user_id" element={<Video />} />
               <Route path="/channel/:user_id" element={<Channel />} />
               <Route path="/coming" element={<Coming />} />
+              <Route path="*" element={<Error />} />
             </Routes>
           </div>
 

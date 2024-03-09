@@ -46,7 +46,7 @@ function Channel() {
         <>
             <section className="channel">
                 <div className="container">
-                    <img src={Channel_img} alt="Img" />
+                    <img className="channel__imgBig" src={Channel_img} alt="Img" />
 
                     <ul className="channel__list">
                         <li className="channel__item">
@@ -153,16 +153,16 @@ function Channel() {
 
 
                     <ul className="channel__listTwo">
-                    {foods.map(foodUser => (
-                        <NavLink key={foodUser.id} to={'/video/' + foodUser.id} className={"linkOne"}>
-                            <li key={foodUser.id} className="head__itemThree">
-                                <img className="head__imgThree" src={foodUser.thumbnailUrl} alt={foodUser.title + "ning rasmi"} />
-                                <h2 className="head__titleThree">{foodUser.title}</h2>
-                                <p className="head__pThree">34k views  ·  5 months ago</p>
-                            </li>
-                        </NavLink>
-                    ))}
-                </ul>
+                        {foods.map(foodUser => (
+                            <NavLink key={foodUser.id} to={'/video/' + foodUser.id} className={"linkOne"}>
+                                <li key={foodUser.id} className="head__itemThree">
+                                    <img className="head__imgThree" src={foodUser.thumbnailUrl} alt={foodUser.title + "ning rasmi"} />
+                                    <h2 className="head__titleThree">{foodUser.title}</h2>
+                                    <p className="head__pThree">34k views  ·  5 months ago</p>
+                                </li>
+                            </NavLink>
+                        ))}
+                    </ul>
 
 
 

@@ -1,0 +1,23 @@
+.error__img {
+    width: 400px;
+}
+
+@media screen and (max-width: 460px) {
+    .error__img {
+        margin-left: -80px;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .error__img {
+        max-width: 250px ;
+        // width: 100%;     
+        margin-left: -140px;
+    }
+}
+
+@media screen and (max-width: 345px) {
+    .error__img {
+        margin-left: -170px;
+    }
+}

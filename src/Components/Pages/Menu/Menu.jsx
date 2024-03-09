@@ -17,9 +17,9 @@ import axios from 'axios';
 
 const menuItems = [
     { id: 1, name: "Home", icon: Home, link: "users" },
-    { id: 2, name: "Trending", icon: Trending, link: "coming" },
-    { id: 3, name: "Subscriptions", icon: Subscriptions, link: "coming" },
-    { id: 4, name: "Library", icon: library, link: "coming" },
+    { id: 2, name: "Trending", icon: Trending, link: "/channel/2" },
+    { id: 3, name: "Subscriptions", icon: Subscriptions, link: "/channel/3" },
+    { id: 4, name: "Library", icon: library, link: "/channel/4" },
 ];
 
 const menuItemsTwo = [
@@ -36,7 +36,7 @@ function Menu({ showText, width }) {
     const [infos, setInfo] = React.useState([]);
 
     React.useEffect(() => {
-        axios.get("https://reqres.in/api/users?page=1")
+        axios.get("https://reqres.in/api/users?page=2")
             .then(response => {
                 setInfo(response.data.data);
             })
@@ -51,12 +51,12 @@ function Menu({ showText, width }) {
             <div className="container__menu">
                 <ul className="menu__list">
                     {menuItems.map(item => (
-                        <li key={item.id} className="menu__item">
-                            <NavLink className="menu__link" to={item.link}>
+                        <NavLink className="menu__link" to={item.link}>
+                                <li key={item.id} className="menu__item">
                                 <img className='menu__icon' src={item.icon} alt={`${item.name} Icon`} />
                                 {showText && item.name}
-                            </NavLink>
                         </li>
+                            </NavLink>
                     ))}
                 </ul>
                 <ul className="menu__itemtwo">
